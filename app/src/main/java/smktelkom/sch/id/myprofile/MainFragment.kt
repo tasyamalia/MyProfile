@@ -21,7 +21,7 @@ class MainFragment : Fragment() {
 
         //TODO STEP 5 - Set an OnClickListener, using Navigation.createNavigateOnClickListener()
         view.findViewById<Button>(R.id.btCv)?.setOnClickListener(
-            Navigation.createNavigateOnClickListener(R.id.experience, null)
+            Navigation.createNavigateOnClickListener(R.id.cv, null)
         )
         //TODO ENDSTEP 5
 
@@ -35,7 +35,7 @@ class MainFragment : Fragment() {
             .build()
 
         view.findViewById<Button>(R.id.btCv)?.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.experience, null, options)
+            Navigation.findNavController(it).navigate(R.id.cv, null, options)
         }
 
 //        view.findViewById<Button>(R.id.navigate_action_bt)?.setOnClickListener(
