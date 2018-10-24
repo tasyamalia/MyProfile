@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/navigation_file">
+
+    <navigation xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                app:startDestination="@+id/launcher_home">
+        <fragment
+                android:id="@+id/launcher_home"
+                android:name="smktelkom_mlg.t01_profileapp.MainFragment"
+                android:label="@string/home"
+                tools:layout="@layout/main_fragment">
+
+            <!-- TODO STEP 8 - Add action with transitions -->
+            <!--<action-->
+            <!--android:id="@+id/next_action"-->
+            <!--app:destination="@+id/flow_step_one"-->
+            <!--app:enterAnim="@anim/slide_in_right"-->
+            <!--app:exitAnim="@anim/slide_out_left"-->
+            <!--app:popEnterAnim="@anim/slide_in_left"-->
+            <!--app:popExitAnim="@anim/slide_out_right" />-->
+
+            <!-- TODO ENDSTEP -->
+
+        </fragment>
+
+        <fragment
+                android:id="@+id/experience"
+                android:name="smktelkom_mlg.t01_profileapp.HomeFragment"
+                tools:layout="@layout/experience_fragment">
+            <argument
+                    android:name="step"
+                    type="integer"
+                    android:defaultValue="1"/>
+
+            <action
+                    android:id="@+id/next_action"
+                    app:destination="@+id/education">
+            </action>
+        </fragment>
+
+        <fragment
+                android:id="@+id/education"
+                android:name="smktelkom_mlg.t01_profileapp.HomeFragment"
+                tools:layout="@layout/education_fragment">
+
+            <argument
+                    android:name="step"
+                    type="integer"
+                    android:defaultValue="2"/>
+
+            <action
+                    android:id="@+id/next_action"
+                    app:popUpTo="@id/launcher_home">
+            </action>
+        </fragment>
+
+        <!-- TODO STEP 4 Create a new navigation destination pointing to SettingsFragment -->
+        <!--<fragment-->
+        <!--android:id="@+id/settings_fragment"-->
+        <!--android:name="com.example.android.codelabs.navigation.SettingsFragment"-->
+        <!--android:label="fragment_settings"-->
+        <!--tools:layout="@layout/fragment_settings"/>-->
+        <!-- TODO END STEP 4 -->
+
+        <fragment
+                android:id="@+id/skill"
+                android:name="smktelkom_mlg.t01_profileapp.SkillFragment"
+                android:label="@string/deeplink"
+                tools:layout="@layout/skill_fragment">
+
+            <argument
+                    android:name="myarg"
+                    android:defaultValue="Android!"/>
+            <!-- TODO STEP 12 - Add a deep link to www.iana.org/domains/{myarg}/ -->
+
+            <!--<deepLink app:uri="www.example.com/{myarg}" />-->
+
+            <!-- TODO END STEP 12 -->
+        </fragment>
+
+    </navigation>
