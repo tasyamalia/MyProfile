@@ -9,7 +9,7 @@
                 app:startDestination="@+id/launcher_home">
         <fragment
                 android:id="@+id/launcher_home"
-                android:name="smktelkom_mlg.t01_profileapp.MainFragment"
+                android:name="smktelkom.sch.id.myprofile.MainFragment"
                 android:label="@string/home"
                 tools:layout="@layout/main_fragment">
 

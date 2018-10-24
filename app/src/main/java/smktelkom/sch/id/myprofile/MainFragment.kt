@@ -20,7 +20,7 @@ class MainFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         //TODO STEP 5 - Set an OnClickListener, using Navigation.createNavigateOnClickListener()
-        view.findViewById<Button>(R.id.btExperience)?.setOnClickListener(
+        view.findViewById<Button>(R.id.btCv)?.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.experience, null)
         )
         //TODO ENDSTEP 5
@@ -34,7 +34,7 @@ class MainFragment : Fragment() {
             .setPopExitAnim(R.anim.slide_out_right)
             .build()
 
-        view.findViewById<Button>(R.id.btExperience)?.setOnClickListener {
+        view.findViewById<Button>(R.id.btCv)?.setOnClickListener {
             Navigation.findNavController(it).navigate(R.id.experience, null, options)
         }
 
