@@ -29,7 +29,7 @@
         <fragment
                 android:id="@+id/experience"
                 android:name="smktelkom.sch.id.myprofile.HomeFragment"
-                tools:layout="@layout/experience_fragment">
+                tools:layout="@layout/cv_fragment">
             <argument
                     android:name="step"
                     type="integer"
@@ -43,8 +43,8 @@
 
         <fragment
                 android:id="@+id/education"
-                android:name="smktelkom_mlg.t01_profileapp.HomeFragment"
-                tools:layout="@layout/education_fragment">
+                android:name="smktelkom.sch.id.myprofile.HomeFragment"
+                tools:layout="@layout/favorite_fragment">
 
             <argument
                     android:name="step"
@@ -67,9 +67,9 @@
 
         <fragment
                 android:id="@+id/skill"
-                android:name="smktelkom_mlg.t01_profileapp.SkillFragment"
+                android:name="smktelkom.sch.id.myprofile.ContactFragment"
                 android:label="@string/deeplink"
-                tools:layout="@layout/skill_fragment">
+                tools:layout="@layout/contact_fragment">
 
             <argument
                     android:name="myarg"
@@ -82,3 +82,4 @@
         </fragment>
 
     </navigation>
+</navigation>
