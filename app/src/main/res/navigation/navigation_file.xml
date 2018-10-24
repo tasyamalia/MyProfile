@@ -27,7 +27,7 @@
         </fragment>
 
         <fragment
-                android:id="@+id/experience"
+                android:id="@+id/cv"
                 android:name="smktelkom.sch.id.myprofile.HomeFragment"
                 tools:layout="@layout/cv_fragment">
             <argument
@@ -37,12 +37,12 @@
 
             <action
                     android:id="@+id/next_action"
-                    app:destination="@+id/education">
+                    app:destination="@+id/favorite">
             </action>
         </fragment>
 
         <fragment
-                android:id="@+id/education"
+                android:id="@+id/favorite"
                 android:name="smktelkom.sch.id.myprofile.HomeFragment"
                 tools:layout="@layout/favorite_fragment">
 
@@ -66,7 +66,7 @@
         <!-- TODO END STEP 4 -->
 
         <fragment
-                android:id="@+id/skill"
+                android:id="@+id/contact"
                 android:name="smktelkom.sch.id.myprofile.ContactFragment"
                 android:label="@string/deeplink"
                 tools:layout="@layout/contact_fragment">
