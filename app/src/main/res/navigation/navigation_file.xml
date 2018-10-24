@@ -28,7 +28,7 @@
 
         <fragment
                 android:id="@+id/experience"
-                android:name="smktelkom_mlg.t01_profileapp.HomeFragment"
+                android:name="smktelkom.sch.id.myprofile.HomeFragment"
                 tools:layout="@layout/experience_fragment">
             <argument
                     android:name="step"
