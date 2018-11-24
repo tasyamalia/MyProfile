@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg12"
+>
+
 
     <!--<ImageView-->
     <!--android:layout_width="150dp"-->
@@ -16,22 +20,139 @@
     <!--android:layout_marginStart="8dp" app:layout_constraintVertical_bias="0.167"/>-->
 
 
+    <!--<android.support.v7.widget.CardView
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/colorData"
+
+    >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth"
+                android:textSize="13sp"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center"
+        />
+    </android.support.v7.widget.CardView>-->
+    <!--<android.support.v7.widget.CardView
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center"
+    >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2000/08/28"
+                android:layout_gravity="center"
+                android:textColor="#000"
+        />
+
+    </android.support.v7.widget.CardView>-->
     <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="150dp"
+            android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:src="@drawable/snipping" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.171"/>
+            android:src="@drawable/snipping"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center"
+    >
+    </de.hdodenhof.circleimageview.CircleImageView>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:text="Tasya Amalia Salsabila"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+    />
+    <android.support.v7.widget.CardView
+            android:layout_width="260dp"
+            android:layout_height="210dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+    >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth"
+                android:layout_gravity="center"
+                android:layout_marginBottom="80dp"
+                android:textColor="@color/colorData"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2000/08/28"
+                android:layout_gravity="center"
+                android:layout_marginBottom="56dp"
+        />
+        <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/garis"
+                android:layout_gravity="center"
+                android:layout_marginBottom="45dp"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Place of Birth"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/colorData"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kabupaten Tulungagung"
+                android:layout_gravity="center"
+                android:layout_marginBottom="-6dp"
+        />
+        <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/garis"
+                android:layout_gravity="center"
+                android:layout_marginBottom="-18dp"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:layout_gravity="center"
+                android:layout_marginBottom="-43dp"
+                android:textColor="@color/colorData"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:layout_gravity="center"
+                android:layout_marginBottom="-68dp"
+        />
+        <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/garis"
+                android:layout_gravity="center"
+                android:layout_marginBottom="-83dp"
+        />
+
+
+    </android.support.v7.widget.CardView>
+
     <Button
             android:id="@+id/btCv"
             android:layout_width="260dp"
             android:layout_height="43dp"
-            android:text="Button"
-            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp" app:layout_constraintVertical_bias="0.91"/>
-</android.support.constraint.ConstraintLayout>
+            android:text="Get to know me"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn2"
+    />
+</LinearLayout>

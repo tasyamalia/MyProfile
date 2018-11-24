@@ -4,6 +4,8 @@
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 xmlns:tools="http://schemas.android.com/tools"
                 app:startDestination="@+id/launcher_home">
+
+
         <fragment
                 android:id="@+id/launcher_home"
                 android:name="smktelkom.sch.id.myprofile.MainFragment"
@@ -11,48 +13,53 @@
                 tools:layout="@layout/main_fragment">
 
             <!-- TODO STEP 8 - Add action with transitions -->
-            <!--<action-->
-            <!--android:id="@+id/next_action"-->
-            <!--app:destination="@+id/flow_step_one"-->
-            <!--app:enterAnim="@anim/slide_in_right"-->
-            <!--app:exitAnim="@anim/slide_out_left"-->
-            <!--app:popEnterAnim="@anim/slide_in_left"-->
-            <!--app:popExitAnim="@anim/slide_out_right" />-->
+            <action
+                    android:id="@+id/next_action"
+                    app:destination="@+id/cv"
+                    app:enterAnim="@anim/slide_in_right"
+                    app:exitAnim="@anim/slide_out_left"
+                    app:popEnterAnim="@anim/slide_in_left"
+                    app:popExitAnim="@anim/slide_out_right"/>
 
             <!-- TODO ENDSTEP -->
 
         </fragment>
 
-        <fragment
+        <activity
                 android:id="@+id/cv"
-                android:name="smktelkom.sch.id.myprofile.HomeFragment"
-                tools:layout="@layout/cv_fragment">
-            <argument
-                    android:name="step"
-                    type="integer"
-                    android:defaultValue="1"/>
+                android:name="smktelkom.sch.id.myprofile.Pindah"
+                tools:layout="@layout/activity_pindah">
 
-            <action
-                    android:id="@+id/next_action"
-                    app:destination="@+id/favorite">
-            </action>
-        </fragment>
+        </activity>
+
 
         <fragment
-                android:id="@+id/favorite"
-                android:name="smktelkom.sch.id.myprofile.HomeFragment"
-                tools:layout="@layout/favorite_fragment">
+                android:id="@+id/contact"
+                android:name="smktelkom.sch.id.myprofile.ContactFragment"
+                android:label="@string/home"
+                tools:layout="@layout/contact_fragment">
 
-            <argument
-                    android:name="step"
-                    type="integer"
-                    android:defaultValue="2"/>
+            <!-- TODO STEP 8 - Add action with transitions -->
 
-            <action
-                    android:id="@+id/next_action"
-                    app:popUpTo="@id/launcher_home">
-            </action>
+            <!-- TODO ENDSTEP -->
+
         </fragment>
+
+        <!--<fragment-->
+        <!--android:id="@+id/favorite"-->
+        <!--android:name="smktelkom.sch.id.myprofile.HomeFragment"-->
+        <!--tools:layout="@layout/favorite_fragment">-->
+
+        <!--<argument-->
+        <!--android:name="step"-->
+        <!--type="integer"-->
+        <!--android:defaultValue="2"/>-->
+
+        <!--<action-->
+        <!--android:id="@+id/next_action"-->
+        <!--app:popUpTo="@id/launcher_home">-->
+        <!--</action>-->
+        <!--</fragment>-->
 
         <!-- TODO STEP 4 Create a new navigation destination pointing to SettingsFragment -->
         <!--<fragment-->
@@ -62,20 +69,20 @@
         <!--tools:layout="@layout/fragment_settings"/>-->
         <!-- TODO END STEP 4 -->
 
-        <fragment
-                android:id="@+id/contact"
-                android:name="smktelkom.sch.id.myprofile.ContactFragment"
-                android:label="@string/deeplink"
-                tools:layout="@layout/contact_fragment">
+        <!--<fragment-->
+        <!--android:id="@+id/contact"-->
+        <!--android:name="smktelkom.sch.id.myprofile.ContactFragment"-->
+        <!--android:label="@string/deeplink"-->
+        <!--tools:layout="@layout/contact_fragment">-->
 
-            <argument
-                    android:name="myarg"
-                    android:defaultValue="Android!"/>
-            <!-- TODO STEP 12 - Add a deep link to www.iana.org/domains/{myarg}/ -->
+        <!--<argument-->
+        <!--android:name="myarg"-->
+        <!--android:defaultValue="Android!"/>-->
+        <!--&lt;!&ndash; TODO STEP 12 - Add a deep link to www.iana.org/domains/{myarg}/ &ndash;&gt;-->
 
-            <!--<deepLink app:uri="www.example.com/{myarg}" />-->
+        <!--&lt;!&ndash;<deepLink app:uri="www.example.com/{myarg}" />&ndash;&gt;-->
 
-            <!-- TODO END STEP 12 -->
-        </fragment>
+        <!--&lt;!&ndash; TODO END STEP 12 &ndash;&gt;-->
+        <!--</fragment>-->
 
 </navigation>
