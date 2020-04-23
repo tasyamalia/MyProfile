@@ -24,7 +24,7 @@
             android:layout_marginTop="75dp"
     >
         <android.support.v7.widget.CardView
-                android:layout_width="300dp"
+                android:layout_width="320dp"
                 android:layout_height="80dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
@@ -46,7 +46,7 @@
             />
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
-                android:layout_width="300dp"
+                android:layout_width="320dp"
                 android:layout_height="80dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
@@ -68,7 +68,7 @@
             />
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
-                android:layout_width="300dp"
+                android:layout_width="320dp"
                 android:layout_height="80dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
@@ -90,21 +90,21 @@
             />
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
-                android:layout_width="300dp"
+                android:layout_width="320dp"
                 android:layout_height="80dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
         >
+
             <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/email"
+                    android:layout_width="44dp"
+                    android:layout_height="match_parent"
                     android:layout_marginLeft="15dp"
-            />
+                    android:src="@drawable/email" />
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="tasyaamalia85@gmail.com"
+                    android:text="tasyaamaliasalsa@gmail.com"
                     android:textSize="18dp"
                     android:textColor="@color/colorText"
                     android:layout_marginLeft="70dp"
